@@ -2,42 +2,6 @@
 
 # Reddit Crawler
 
-## Running the Crawler 
-
-For Mac/Linux Users, follow these commands to set up your virtual environment
-
-```bash
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
-For Windows Users, follow these commands to set up your virtual environment
-
-```powershell
-python -m venv venv
-.\venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
-For Mac/Linux users, you can run the crawler using the provided shell script:
-
-```
-./crawler.sh <num_threads> <max_file_size_mb>
-```
-
-* num_threads (optional): Number of worker threads to use (default: 10)
-
-* max_file_size_mb (optional): Max size of each JSON file in MB (default: 10)
-
-
-For Windows users, you can run the crawler by either double clicking the batch file or by typing in Powershell
-```
-.\crawler.bat <num_threads> <max_file_size_mb>
-```
-* num_threads (optional): Number of worker threads to use (default: 10)
-
-* max_file_size_mb (optional): Max size of each JSON file in MB (default: 10)
-
 ## Crawler Architecture
 ![crawlerdiagram drawio(killswitch)](https://github.com/user-attachments/assets/5a5f46a5-6939-4378-a6fe-85a2887a15a8)
 
@@ -88,3 +52,40 @@ Reddit's API rate limiting began to impact performance between **30–50 threads
 - Reddit API rate limits
 - Network latency
 - Shared system resources
+
+
+## Running the Crawler 
+
+For Mac/Linux Users, follow these commands to set up your virtual environment
+
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+For Windows Users, follow these commands to set up your virtual environment
+
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+For Mac/Linux users, you can run the crawler using the provided shell script:
+
+```
+./crawler.sh <num_threads> <max_file_size_mb>
+```
+
+* num_threads (optional): Number of worker threads to use (default: 10)
+
+* max_file_size_mb (optional): Max size of each JSON file in MB (default: 10)
+
+
+For Windows users, you can run the crawler by either double clicking the batch file or by typing in Powershell
+```
+.\crawler.bat <num_threads> <max_file_size_mb>
+```
+* num_threads (optional): Number of worker threads to use (default: 10)
+
+* max_file_size_mb (optional): Max size of each JSON file in MB (default: 10)
