@@ -43,7 +43,6 @@ We tested the Reddit crawler using varying thread counts and two JSON file size 
 
 Using **20–40 threads** offers the best tradeoff between speed and stability. While additional threads beyond this range do not consistently improve performance, they also do not significantly degrade it under our test conditions.
 
----
 
 ## Rate Limit Stress Testing
 
